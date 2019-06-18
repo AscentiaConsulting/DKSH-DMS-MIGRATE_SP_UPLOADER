@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TESTModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="T_STG_DOC">
+          <Key>
+            <PropertyRef Name="DocID" />
+          </Key>
+          <Property Name="ParentID" Type="nvarchar(max)" />
+          <Property Name="ParentName" Type="nvarchar(max)" />
+          <Property Name="DocID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DocumentName" Type="nvarchar(max)" />
+          <Property Name="CreationDate" Type="nvarchar(max)" />
+          <Property Name="MimeType" Type="nvarchar(max)" />
+          <Property Name="DocumentType" Type="nvarchar(max)" />
+          <Property Name="ValidFrom" Type="nvarchar(max)" />
+          <Property Name="ValidTo" Type="nvarchar(max)" />
+          <Property Name="CustomerCode" Type="nvarchar(max)" />
+          <Property Name="SupplierCode" Type="nvarchar(max)" />
+          <Property Name="ProductCode" Type="nvarchar(max)" />
+          <Property Name="ReferenceNo" Type="nvarchar(max)" />
+          <Property Name="FormNo" Type="nvarchar(max)" />
+          <Property Name="Type" Type="nvarchar(max)" />
+          <Property Name="StaffName" Type="nvarchar(max)" />
+          <Property Name="ProcessID" Type="nvarchar(max)" />
+          <Property Name="OriginalProcessIS" Type="nvarchar(max)" />
+          <Property Name="ParentProcessID" Type="nvarchar(max)" />
+          <Property Name="ReferenceProcessID" Type="nvarchar(max)" />
+          <Property Name="BatchNo" Type="nvarchar(max)" />
+          <Property Name="BoxID" Type="nvarchar(max)" />
+          <Property Name="Amount" Type="nvarchar(max)" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="Remark" Type="nvarchar(max)" />
+          <Property Name="RetentionPeriod" Type="nvarchar(max)" />
+          <Property Name="ReasonStatus" Type="nvarchar(max)" />
+          <Property Name="Round" Type="nvarchar(max)" />
+          <Property Name="SalesOrder" Type="nvarchar(max)" />
+          <Property Name="DocumentDate" Type="nvarchar(max)" />
+          <Property Name="Customer" Type="nvarchar(max)" />
+          <Property Name="OrderType" Type="nvarchar(max)" />
+          <Property Name="PONumber" Type="nvarchar(max)" />
+          <Property Name="YourReference" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="nvarchar(max)" />
+          <Property Name="UPLOADRETRY" Type="int" />
+          <Property Name="ISUPLOAD" Type="int" />
+          <Property Name="DOCURL" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityContainer Name="TESTModel1StoreContainer">
+          <EntitySet Name="T_STG_DOC" EntityType="Self.T_STG_DOC" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TESTModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="T_STG_DOC">
+          <Key>
+            <PropertyRef Name="DocID" />
+          </Key>
+          <Property Name="ParentID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ParentName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DocID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DocumentName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreationDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MimeType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DocumentType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ValidFrom" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ValidTo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CustomerCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SupplierCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ProductCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ReferenceNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FormNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="StaffName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ProcessID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OriginalProcessIS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ParentProcessID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ReferenceProcessID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BatchNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BoxID" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Amount" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Remark" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="RetentionPeriod" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ReasonStatus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Round" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SalesOrder" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DocumentDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Customer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OrderType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PONumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="YourReference" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UPLOADRETRY" Type="Int32" />
+          <Property Name="ISUPLOAD" Type="Int32" />
+          <Property Name="DOCURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="DestinationEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="T_STG_DOC" EntityType="Self.T_STG_DOC" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TESTModel1StoreContainer" CdmEntityContainer="DestinationEntities">
+          <EntitySetMapping Name="T_STG_DOC">
+            <EntityTypeMapping TypeName="TESTModel1.T_STG_DOC">
+              <MappingFragment StoreEntitySet="T_STG_DOC">
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+                <ScalarProperty Name="ParentName" ColumnName="ParentName" />
+                <ScalarProperty Name="DocID" ColumnName="DocID" />
+                <ScalarProperty Name="DocumentName" ColumnName="DocumentName" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="MimeType" ColumnName="MimeType" />
+                <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+                <ScalarProperty Name="ValidFrom" ColumnName="ValidFrom" />
+                <ScalarProperty Name="ValidTo" ColumnName="ValidTo" />
+                <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+                <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+                <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+                <ScalarProperty Name="ReferenceNo" ColumnName="ReferenceNo" />
+                <ScalarProperty Name="FormNo" ColumnName="FormNo" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="StaffName" ColumnName="StaffName" />
+                <ScalarProperty Name="ProcessID" ColumnName="ProcessID" />
+                <ScalarProperty Name="OriginalProcessIS" ColumnName="OriginalProcessIS" />
+                <ScalarProperty Name="ParentProcessID" ColumnName="ParentProcessID" />
+                <ScalarProperty Name="ReferenceProcessID" ColumnName="ReferenceProcessID" />
+                <ScalarProperty Name="BatchNo" ColumnName="BatchNo" />
+                <ScalarProperty Name="BoxID" ColumnName="BoxID" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="RetentionPeriod" ColumnName="RetentionPeriod" />
+                <ScalarProperty Name="ReasonStatus" ColumnName="ReasonStatus" />
+                <ScalarProperty Name="Round" ColumnName="Round" />
+                <ScalarProperty Name="SalesOrder" ColumnName="SalesOrder" />
+                <ScalarProperty Name="DocumentDate" ColumnName="DocumentDate" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="OrderType" ColumnName="OrderType" />
+                <ScalarProperty Name="PONumber" ColumnName="PONumber" />
+                <ScalarProperty Name="YourReference" ColumnName="YourReference" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="UPLOADRETRY" ColumnName="UPLOADRETRY" />
+                <ScalarProperty Name="ISUPLOAD" ColumnName="ISUPLOAD" />
+                <ScalarProperty Name="DOCURL" ColumnName="DOCURL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

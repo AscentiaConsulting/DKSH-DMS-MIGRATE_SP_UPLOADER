@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TESTModelStoreContainer" CdmEntityContainer="SourceEntities">
+    <EntitySetMapping Name="UPLOADERs">
+      <EntityTypeMapping TypeName="TESTModel.UPLOADER">
+        <MappingFragment StoreEntitySet="UPLOADER">
+          <ScalarProperty Name="DOCID" ColumnName="DOCID" />
+          <ScalarProperty Name="FILEPATH" ColumnName="FILEPATH" />
+          <ScalarProperty Name="PROCESS_FLAG" ColumnName="PROCESS_FLAG" />
+          <ScalarProperty Name="PROCESSEDTIME" ColumnName="PROCESSEDTIME" />
+          <ScalarProperty Name="RESULT" ColumnName="RESULT" />
+          <ScalarProperty Name="UPLOADEDURL" ColumnName="UPLOADEDURL" />
+          <ScalarProperty Name="ERRORMESSAGE" ColumnName="ERRORMESSAGE" />
+          <ScalarProperty Name="ISUPDATEDSTAGING" ColumnName="ISUPDATEDSTAGING" />
+          <ScalarProperty Name="STAGINGUPDATEDTIME" ColumnName="STAGINGUPDATEDTIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

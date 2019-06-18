@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TESTModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="T_STG_DOC">
+    <Key>
+      <PropertyRef Name="DocID" />
+    </Key>
+    <Property Name="ParentID" Type="nvarchar(max)" />
+    <Property Name="ParentName" Type="nvarchar(max)" />
+    <Property Name="DocID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DocumentName" Type="nvarchar(max)" />
+    <Property Name="CreationDate" Type="nvarchar(max)" />
+    <Property Name="MimeType" Type="nvarchar(max)" />
+    <Property Name="DocumentType" Type="nvarchar(max)" />
+    <Property Name="ValidFrom" Type="nvarchar(max)" />
+    <Property Name="ValidTo" Type="nvarchar(max)" />
+    <Property Name="CustomerCode" Type="nvarchar(max)" />
+    <Property Name="SupplierCode" Type="nvarchar(max)" />
+    <Property Name="ProductCode" Type="nvarchar(max)" />
+    <Property Name="ReferenceNo" Type="nvarchar(max)" />
+    <Property Name="FormNo" Type="nvarchar(max)" />
+    <Property Name="Type" Type="nvarchar(max)" />
+    <Property Name="StaffName" Type="nvarchar(max)" />
+    <Property Name="ProcessID" Type="nvarchar(max)" />
+    <Property Name="OriginalProcessIS" Type="nvarchar(max)" />
+    <Property Name="ParentProcessID" Type="nvarchar(max)" />
+    <Property Name="ReferenceProcessID" Type="nvarchar(max)" />
+    <Property Name="BatchNo" Type="nvarchar(max)" />
+    <Property Name="BoxID" Type="nvarchar(max)" />
+    <Property Name="Amount" Type="nvarchar(max)" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Remark" Type="nvarchar(max)" />
+    <Property Name="RetentionPeriod" Type="nvarchar(max)" />
+    <Property Name="ReasonStatus" Type="nvarchar(max)" />
+    <Property Name="Round" Type="nvarchar(max)" />
+    <Property Name="SalesOrder" Type="nvarchar(max)" />
+    <Property Name="DocumentDate" Type="nvarchar(max)" />
+    <Property Name="Customer" Type="nvarchar(max)" />
+    <Property Name="OrderType" Type="nvarchar(max)" />
+    <Property Name="PONumber" Type="nvarchar(max)" />
+    <Property Name="YourReference" Type="nvarchar(max)" />
+    <Property Name="CreatedBy" Type="nvarchar(max)" />
+    <Property Name="UPLOADRETRY" Type="int" />
+    <Property Name="ISUPLOAD" Type="int" />
+    <Property Name="DOCURL" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="TESTModel1StoreContainer">
+    <EntitySet Name="T_STG_DOC" EntityType="Self.T_STG_DOC" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
