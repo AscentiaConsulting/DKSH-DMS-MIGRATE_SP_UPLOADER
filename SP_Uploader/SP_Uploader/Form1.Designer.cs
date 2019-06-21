@@ -35,6 +35,7 @@
             this.btSubmit = new System.Windows.Forms.Button();
             this.tbResult = new System.Windows.Forms.TextBox();
             this.btCheckSource = new System.Windows.Forms.Button();
+            this.tbLimit = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -69,7 +70,7 @@
             this.tbDocLib.Name = "tbDocLib";
             this.tbDocLib.Size = new System.Drawing.Size(353, 20);
             this.tbDocLib.TabIndex = 3;
-            this.tbDocLib.Text = "CUSTOMER_MIG";
+            this.tbDocLib.Text = "SUPPLIER_MIG";
             // 
             // btSubmit
             // 
@@ -83,10 +84,10 @@
             // 
             // tbResult
             // 
-            this.tbResult.Enabled = false;
             this.tbResult.Location = new System.Drawing.Point(12, 74);
             this.tbResult.Multiline = true;
             this.tbResult.Name = "tbResult";
+            this.tbResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbResult.Size = new System.Drawing.Size(460, 222);
             this.tbResult.TabIndex = 5;
             // 
@@ -100,11 +101,20 @@
             this.btCheckSource.UseVisualStyleBackColor = true;
             this.btCheckSource.Click += new System.EventHandler(this.btCheckSource_Click);
             // 
+            // tbLimit
+            // 
+            this.tbLimit.Location = new System.Drawing.Point(493, 207);
+            this.tbLimit.Name = "tbLimit";
+            this.tbLimit.Size = new System.Drawing.Size(88, 20);
+            this.tbLimit.TabIndex = 7;
+            this.tbLimit.Text = "100";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(593, 327);
+            this.Controls.Add(this.tbLimit);
             this.Controls.Add(this.btCheckSource);
             this.Controls.Add(this.tbResult);
             this.Controls.Add(this.btSubmit);
@@ -128,6 +138,7 @@
         private System.Windows.Forms.Button btSubmit;
         private System.Windows.Forms.TextBox tbResult;
         private System.Windows.Forms.Button btCheckSource;
+        private System.Windows.Forms.TextBox tbLimit;
     }
 }
 

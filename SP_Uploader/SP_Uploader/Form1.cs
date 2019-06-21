@@ -78,11 +78,17 @@ namespace SP_Uploader
         {
             CreateDocumentLibrary(tbDocLib.Text);
             tbResult.Text = ">>Start process.\r\n";
-            bool isconnect = CheckConnection();
+            bool isconnect = false;// CheckConnection();
             using (SourceEntities db = new SourceEntities())
             {
-                List<UPLOADER> list = db.UPLOADERs.Where(item => item.PROCESS_FLAG == true && item.FILEPATH != null && item.FILEPATH != "").ToList();
+                int limit = int.Parse(tbLimit.Text);
+                List<UPLOADER> list = db.UPLOADERs.Where(item => item.PROCESS_FLAG == true && item.FILEPATH != null && item.FILEPATH != "").Take(limit).ToList();
                 tbResult.Text += string.Format("Total valid records for processing: {0}\r\n", list.Count);
+                //for (int i = 0; i < list.Count; i++)
+                //{
+                //    tbResult.Text += string.Format("DocID: {0}, success\r\n", list[i].DOCID);
+                //}
+
                 foreach (UPLOADER file in list)
                 {
                     string result = UploadDocuments(file.FILEPATH);
@@ -100,7 +106,7 @@ namespace SP_Uploader
                     {
                         file.RESULT = "ERROR";
                         file.ERRORMESSAGE = result;
-                        tbResult.Text += string.Format("DocID: {0}, fail\r\n", file.DOCID);
+                        tbResult.Text += string.Format("DocID: {0}, fail, {1}\r\n", file.DOCID, result);
                     }
                     db.SaveChanges();
                     if (success && isconnect)

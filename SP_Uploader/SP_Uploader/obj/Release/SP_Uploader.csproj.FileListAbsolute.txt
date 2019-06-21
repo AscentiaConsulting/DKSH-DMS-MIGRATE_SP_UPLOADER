@@ -103,10 +103,10 @@ C:\Users\ThanapolSukhaya\Documents\ProjectVS\DKSH-DMS-MIGRATE_SP_UPLOADER\SP_Upl
 C:\Users\ThanapolSukhaya\Documents\ProjectVS\DKSH-DMS-MIGRATE_SP_UPLOADER\SP_Uploader\SP_Uploader\bin\Release\ru\System.Spatial.resources.dll
 C:\Users\ThanapolSukhaya\Documents\ProjectVS\DKSH-DMS-MIGRATE_SP_UPLOADER\SP_Uploader\SP_Uploader\bin\Release\zh-Hans\System.Spatial.resources.dll
 C:\Users\ThanapolSukhaya\Documents\ProjectVS\DKSH-DMS-MIGRATE_SP_UPLOADER\SP_Uploader\SP_Uploader\bin\Release\zh-Hant\System.Spatial.resources.dll
-C:\Users\ThanapolSukhaya\Documents\ProjectVS\DKSH-DMS-MIGRATE_SP_UPLOADER\SP_Uploader\SP_Uploader\obj\Release\SP_Uploader.csprojResolveAssemblyReference.cache
 C:\Users\ThanapolSukhaya\Documents\ProjectVS\DKSH-DMS-MIGRATE_SP_UPLOADER\SP_Uploader\SP_Uploader\obj\Release\SP_Uploader.Form1.resources
 C:\Users\ThanapolSukhaya\Documents\ProjectVS\DKSH-DMS-MIGRATE_SP_UPLOADER\SP_Uploader\SP_Uploader\obj\Release\SP_Uploader.Properties.Resources.resources
 C:\Users\ThanapolSukhaya\Documents\ProjectVS\DKSH-DMS-MIGRATE_SP_UPLOADER\SP_Uploader\SP_Uploader\obj\Release\SP_Uploader.csproj.GenerateResource.Cache
 C:\Users\ThanapolSukhaya\Documents\ProjectVS\DKSH-DMS-MIGRATE_SP_UPLOADER\SP_Uploader\SP_Uploader\obj\Release\SP_Uploader.csproj.CoreCompileInputs.cache
 C:\Users\ThanapolSukhaya\Documents\ProjectVS\DKSH-DMS-MIGRATE_SP_UPLOADER\SP_Uploader\SP_Uploader\obj\Release\SP_Uploader.exe
 C:\Users\ThanapolSukhaya\Documents\ProjectVS\DKSH-DMS-MIGRATE_SP_UPLOADER\SP_Uploader\SP_Uploader\obj\Release\SP_Uploader.pdb
+C:\Users\ThanapolSukhaya\Documents\ProjectVS\DKSH-DMS-MIGRATE_SP_UPLOADER\SP_Uploader\SP_Uploader\obj\Release\SP_Uploader.csprojResolveAssemblyReference.cache
